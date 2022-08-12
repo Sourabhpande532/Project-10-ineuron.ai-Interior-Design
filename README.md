@@ -8,7 +8,7 @@ By **Saurabh**
 ![Live class](https://img.shields.io/badge/LIVE--CLASS-PROJECT--14-lightgrey)
 
 
-# [GO LIVE](https://live-proj-14.netlify.app)
+# [GO LIVE](https://interior-design-p10-ineuron-ai.netlify.app/)
 ![](./Images/Interior%20Design%20landing%20page.png)
 
 
