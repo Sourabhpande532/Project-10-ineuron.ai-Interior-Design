@@ -14,6 +14,7 @@ body {
   background-size: cover;
   background-position: center;
   height: auto;
+  height: 100vh;
   background-repeat: no-repeat;
   color: #fff;
   font-family: "Montserrat", sans-serif;
@@ -23,7 +24,7 @@ body {
   margin: 0 auto;
 }
 .navbar,
-.part-seconde {
+.part-seconde ,.part-second {
   display: flex;
   justify-content: space-between;
   padding-top: 2rem;
@@ -39,13 +40,95 @@ body {
 nav {
   display: flex;
   border-bottom: 3px solid #ffffff;
-  border-bottom-left-radius: 19px;
-  border-bottom-right-radius: 19px;
 }
 .nav-item,
 .third-one {
   margin: 14px;
   padding-right: 20px;
+}
+@media screen and (max-width: 667px) {
+  html,body{
+    margin: 0;
+    left: 0;
+    right: 0;
+    position: relative;
+    background-image: url('../Images/interior.jpg');
+    height: 120vh;
+    background-size: cover;
+    object-fit: cover;
+    position: absolute;
+    background-repeat: no-repeat;
+   
+   
+  }
+  .main-one {
+    max-width: 50rem;
+    margin: 0 auto;
+  }
+  .navbar {
+    overflow-x: scroll;
+  }
+  .navbar nav .third-one {
+    width: 250px;
+  }
+  .navbar nav {
+    border-bottom: 3px solid #ffffff;
+    margin-left: 3rem;
+  }
+  .navbar nav :first-child {
+    width: 120px;
+  }
+
+  .navbar .logo {
+    width: 120px;
+    height: 3rem;
+  }
+  .part-seconde  h1 {
+    font-size: 2rem;
+    width: 90vw;
+  }
+  .part-seconde {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 6rem;
+  }
+  .part-seconde .back-shadow .circle-line .circle {
+    background-color: #ba4343;
+  }
+  .part-seconde .back-shadow:last-child .circle-line {
+    right: 4rem;
+  }
+  .part-second .circle-line_ .circle {
+    background-color: #8f2e2e;
+  }
+  .part-second .back-shadow-two:last-child .circle-line_ {
+    transform: rotate(-90deg);
+  }
+  .part-seconde .back-shadow {
+    max-width: 12rem;
+    min-height: 6rem;
+  }
+  .part-second .back-shadow-two {
+    max-width: 12rem;
+    max-height: 14rem;
+    right: -0.1rem;
+    margin-top: 2rem;
+  }
+
+  .back-shadow-two:last-child .circle-line_ {
+    left: -2.3rem;
+    top: 0;
+  }
+  .part-seconde .heading {
+    font-size: 2rem;
+  }
+  .part-second h3 {
+    padding: 0.6rem 0;
+    max-width: 9rem;
+    height: 50px;
+    font-size: 20px;
+  }
+
 }
 
 .pic {
@@ -82,12 +165,10 @@ nav {
   height: 4.9rem;
 }
 h1 {
-  font-weight: bolder;
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 h3 {
-  padding: 11px 30px;
-  margin: 4px 8px;
+  padding: 0.5rem 0;
   text-align: center;
   width: 300px;
   height: 60px;
